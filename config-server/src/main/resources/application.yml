@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: native
+
+  spring:
+    profiles: native
+    cloud:
+      config:
+        server:
+          native:
+            search-locations:
+              C:\\Users\\stanislau.krukouski\\IdeaProjects\\spring-cloud-netflix-stack\\{application}/{profile}
+## spring:
+##    profiles: git
+##    cloud:
+##      config:
+#        server:
+#          git:
+#            uri: https://github.com/ksereda/Gallery-Service/
+#            search-paths:
+#              - "ms-config-properties/{application}/{profile}"
